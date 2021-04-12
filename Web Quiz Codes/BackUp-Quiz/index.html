@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup Quiz | RUHUL AMIN PARVEZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+          
+        if (name==null || name==""){  
+          alert("Fields can't be Empty");  
+          return false;  
+        }else if(password.length>10){  
+          alert("Password must be at least 10 characters long.Password is not valid");  
+          return false;  
+          }  
+        }  
+        </script>  
+        <body>  
+        <form name="myform" method="post" action="" onsubmit="return validateform()" >  
+        First Name: <input type="text" name="name" placeholder="Enter your name">
+        Password: <input type="password" name="password" placeholder="Enter your password"><br/>  
+        
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="cars">Choose your subject:</label>
+
+        <select name="Subject" id="subject">
+        <option value="algorithm">Algorithm</option>
+        <option value="web">Web Engineering</option>
+        <option value="ai">Artificial Intelligence</option>
+        <option value="simulation">Simulation</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Send">  
+        </form>
+    
+</body>
+</html>
